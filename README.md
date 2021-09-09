@@ -36,5 +36,5 @@ It also serves as the headquarters of Visakhapatnam district With an estimated o
  |Bamboo chicken	| Araku	                 | 500 rupess  |
  |panipuri          | India	                 | 50 rupees   |
  |Gongura mutton	| Godavari	             | 1000 rupees |
-
-   
+ |Maggie            | hyderabad              | 50 rupees   |
+ | Dhahi vada       | khammam                | 30 rupees   |
