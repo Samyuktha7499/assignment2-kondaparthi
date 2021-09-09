@@ -26,7 +26,7 @@ It also serves as the headquarters of Visakhapatnam district With an estimated o
  * Snacks
     * chips
     * Drinks
-    
+
 **[Link to navigate to about me](AboutMe.md)**
    
    ---
@@ -42,6 +42,12 @@ It also serves as the headquarters of Visakhapatnam district With an estimated o
  |Maggie            | hyderabad              | 50 rupees   |
  | Dhahi vada       | khammam                | 30 rupees   |
   
+  ---
+
+# Adding new section called pithy quotes
+ > Actions speak louder than words. - *Abraham Lincoln*
+ > Practice makes perfect. – *Vince Lombardi*
+
   ---
 
   # code fencing 
