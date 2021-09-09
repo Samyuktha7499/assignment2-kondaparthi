@@ -46,6 +46,7 @@ It also serves as the headquarters of Visakhapatnam district With an estimated o
 
 # Adding new section called pithy quotes
  > Actions speak louder than words. - *Abraham Lincoln*
+ 
  > Practice makes perfect. – *Vince Lombardi*
 
   ---
