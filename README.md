@@ -26,7 +26,8 @@ It also serves as the headquarters of Visakhapatnam district With an estimated o
  * Snacks
     * chips
     * Drinks
-**[Link to navigate to about me](AboutMe.md);
+    
+**[Link to navigate to about me](AboutMe.md)**
    
    ---
 
