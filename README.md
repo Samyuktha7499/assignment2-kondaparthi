@@ -3,7 +3,9 @@
 ###### My Favourite place
 Vizag , formerly known as  **Vishakapatanam which is the largest city** and the proposed **administrative capital** of the Indian state of Andhra Pradesh. It lies between the Eastern Ghats and the coast of the Bay of Bengal. It is the second largest city in the East cost of India after Chennai and also the fourth largest city in South India. It is one of the four smart cities of Andhra pradesh selected under Smart Cities Mission.
 It also serves as the headquarters of Visakhapatnam district With an estimated output of $43.5 billion, the city is the ninth largest contributor to India's overall Gross domestic product as of 2016.
+
 ---
+
 ## Directions from maryville to vizag
 1. Take flight from kansas city to hyderabad.
 2. Take car from hyderabad to vizag.
@@ -38,3 +40,48 @@ It also serves as the headquarters of Visakhapatnam district With an estimated o
  |Gongura mutton	| Godavari	             | 1000 rupees |
  |Maggie            | hyderabad              | 50 rupees   |
  | Dhahi vada       | khammam                | 30 rupees   |
+  
+  ---
+
+  # code fencing 
+  The divide-and-conquer paradigm is often used to find an optimal solution of a problem. Its basic idea is to decompose a given problem into two or more similar, but simpler, subproblems, to solve them in turn, and to compose their solutions to solve the given problem. Problems of sufficient simplicity are solved directly. For example, to sort a given list of n natural numbers, split it into two lists of about n/2 numbers each, sort each of them in turn, and interleave both results appropriately to obtain the sorted version of the given list (see the picture). This approach is known as the merge sort algorithm.
+  Refer for more <https://en.wikipedia.org/wiki/Divide-and-conquer_algorithm>
+
+```
+  int m, n;
+vector<long long> dp_before(n), dp_cur(n);
+
+long long C(int i, int j);
+
+// compute dp_cur[l], ... dp_cur[r] (inclusive)
+void compute(int l, int r, int optl, int optr) {
+    if (l > r)
+        return;
+
+    int mid = (l + r) >> 1;
+    pair<long long, int> best = {LLONG_MAX, -1};
+
+    for (int k = optl; k <= min(mid, optr); k++) {
+        best = min(best, {(k ? dp_before[k - 1] : 0) + C(k, mid), k});
+    }
+
+    dp_cur[mid] = best.first;
+    int opt = best.second;
+
+    compute(l, mid - 1, optl, opt);
+    compute(mid + 1, r, opt, optr);
+}
+
+int solve() {
+    for (int i = 0; i < n; i++)
+        dp_before[i] = C(0, i);
+
+    for (int i = 1; i < m; i++) {
+        compute(0, n - 1, 0, n - 1);
+        dp_before = dp_cur;
+    }
+
+    return dp_before[n - 1];
+}
+```
+For more <https://cp-algorithms.com/dynamic_programming/divide-and-conquer-dp.html>
