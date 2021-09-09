@@ -25,3 +25,16 @@ It also serves as the headquarters of Visakhapatnam district With an estimated o
     * chips
     * Drinks
 **[Link to navigate to about me](AboutMe.md);
+   
+   ---
+
+   #	Everybody needs food to eat. Some people enjoy eating in a restaurant, and some people enjoy making their own meals at home. I'm attaching recommended food items list in below table.
+   # Creating table for famous foods/drinks available places
+   
+ |Items	            | Items available places | Approx pay  |
+ |---               |---                     |---:
+ |Bamboo chicken	| Araku	                 | 500 rupess  |
+ |panipuri          | India	                 | 50 rupees   |
+ |Gongura mutton	| Godavari	             | 1000 rupees |
+
+   
